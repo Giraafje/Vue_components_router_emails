@@ -1,26 +1,26 @@
 <template>
   <div class="container">
-    <div class="nav">
+    <div class="nav"> <!-- left side of the screen -->
       <router-link 
       tag="li" 
       class="link" 
-      to="/inbox">All e-mails</router-link>
+      to="/inbox">All e-mails</router-link> <!-- choosing to load all emails from /inbox -->
       <router-link 
       tag="li" 
       class="link" 
-      to="/inbox/2">First 2 e-mails</router-link>
+      to="/inbox/2">First 2 e-mails</router-link> <!-- choosing to load only 2 emails, using /2 -->
       <router-link 
       tag="li" 
       class="link" 
-      to="/inbox/5">First 5 e-mails</router-link>
+      to="/inbox/5">First 5 e-mails</router-link> <!-- choosing to load only 5 emails, using /5 -->
       <router-link 
       tag="li" 
       class="link" 
-      to="/inbox/50">First 50 e-mails</router-link>
+      to="/inbox/50">First 50 e-mails</router-link> <!-- choosing to load 50 emails, using /50 -->
     </div>
-    <div class="mailbox">
-    <h2>Mailbox</h2>
-    <router-view></router-view>
+    <div class="mailbox"> <!-- right side of the screen -->
+      <h2>Mailbox</h2>
+      <router-view></router-view> <!-- Here is where the emails will show -->
     </div>
   </div>
 </template>
